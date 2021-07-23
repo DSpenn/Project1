@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Vibe Cloud</title>
+  </head>
+  <body>
+    <!-- header with application name -->
+    <header>
+      <h1>Vibe Cloud</h1>
+    </header>
+    <!-- style main element as materialize container -->
+    <main class="container">
+      <!-- top panel contains search instructions and search widgets -->
+      <section id="top-panel">
+        <div id="search-area">
+          <!-- instructions for end user -->
+          <!-- <h1>Enter your zip code to find restaurant vibes in your area ...</h1> -->
+          <!-- put search widgets in materialize row -->
+          <div id="search-input-row" class="row">
+            <!-- require zip code text restrict input to 5 characters -->
+            <input
+              type="text"
+              id="zip-code-text"
+              name="zip-code-text"
+              minlength="5"
+              maxlength="5"
+              required
+            />
+            <!-- search button with materialize styling -->
+            <a
+              id="search-button"
+              name="search-button"
+              class="waves-effect waves-light btn"
+              ><i class="material-icons right">cloud</i>Enter ZIP Code</a>
+          </div>
+        </div>
+      </section>
+      <!-- bottom panel contains search results map and word cloud -->
+      <section id="bottom-panel">
+        <!-- container for search results map -->
+        <div class="results-map-area" style="width: 800px;">
+          <!-- add realistic placeholder image, make responsive with materialize styling -->
+          <div class="responsive-img z-depth-3" id="map"></div>
+          </div>
+          <!--   <img class="placeholder-image responsive-img z-depth-3" src="https://billypenn.com/wp-content/uploads/2020/11/pretzel-map-768x431.jpg"> -->
+        </div>
+        <!-- container for word cloud -->
+        <div id="word-cloud-area">
+          <!-- add realistic placeholder image, make responsive with materialize styling -->
+          <img
+            class="placeholder-image responsive-img"
+            id="wordcloudImg"
+            src="./assets/images/word_cloud-plh.png"
+          />
+        </div>
+      </section>
+       <footer>        
+        <div class="carousel">
+      </div></footer> 
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDsbCvpEHTiO2sw8WggKpQxewNLglPUg8&libraries=places&v=weekly&channel=2"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
