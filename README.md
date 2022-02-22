@@ -1,15 +1,27 @@
 # vibe-cloud-project
 
 ## Project Description
-We are building an application that lets users explore the vibes of restaurants in their zip code by presenting a word cloud of restaurant reviews. 
-Our application will use two APIs to generate a word cloud. The first API will return a list of restaurants in a zip code provided by the user, as well reviews of those restaurants. The second API will generate a word cloud from the text of the reviews.
+The goal of VibeCloud project is to create an application that lets users explore the vibes of restaurants in their ZIP code by presenting a word cloud of restaurant reviews.
+
+Our application uses two APIs to generate review word clouds. The first API returns a list of restaurants in a ZIP code provided by the user, as well reviews of those restaurants. The second API generates a word cloud from the text of the returned reviews.
+
 
 ## User Story
-As a person with an interest in dining in my area
-I want to find a restaurant whose vibe and cuisine suit my interests
-So that I can decide if I would like to go.
+```
+As A person with an interest in dining in my area
+- I WANT to find a restaurant whose vibe and cuisine suit my interests
+- SO THAT I can decide if I would like to go.
+```
+
+## Link to deployed 
+
+https://dspenn.github.io/Project1/
 
 ## Resources
 
 https://materializecss.com/
 
+## Screenshot
+The following screenshot illustrates the results of a VibeCloud search in the deployed application:
+
+![Alt text](./screenshot.png?raw=true "Screenshot of VibeCloud")
